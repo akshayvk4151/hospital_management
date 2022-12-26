@@ -1,0 +1,144 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_doctors.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br>
+
+
+
+
+<section id="main_body">
+    <div class="heading" style="padding-top: 100px; padding-bottom: 20px;">
+        <h1 class="heading_text text-center mb-2"><u style="font-family: sans-serif;">Our Doctors</u> </h1>
+    </div>
+
+    <div class="container">
+        <div class="row gy-3 my-3" style="padding-bottom: 80px;">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top" src="{% static 'images/istockphoto-1327024466-170667a.jpg' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr Arun</h5>
+                        <p class="card-text">
+                        <h4>Department of Cardio</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top" src="{% static 'images/istockphoto-1342708859-170667a.jpg' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr Simon</h5>
+                        <p class="card-text">
+                        <h4>Department of Psychology</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top"
+                            src="{% static 'images/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr Manoj</h5>
+                        <p class="card-text">
+                        <h4>Department of Pediatrics</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top" src="{% static 'images/doc1.png' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr Meena</h5>
+                        <p class="card-text">
+                        <h4>Department of Gynaecology</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top" src="{% static 'images/balveer-nehra.png' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr saroj</h5>
+                        <p class="card-text">
+                        <h4>Department of Neurology</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img-top" src="{% static 'images/lady-doctor.png' %} "
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr Maneesh</h5>
+                        <p class="card-text">
+                        <h4>Department of Psychiatry</h4><br>
+                        <h3>(Senior Consultant)</h3>
+                        </p>
+                        <a href="{% url 'common_app:login' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- footer -->
+
+{% endblock %}
